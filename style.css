@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url('img/navbar1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    min-height: 500px;
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.navbar > * {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-about {
+    background-image: url('img/navbar2.jpg');
+}
+
+.navbar-layanan {
+    background-image: url('img/navbar3.jpg');
+}
+
+.navbar-detail {
+    background-image: url('img/navbar4.jpg');
+    min-height: 100px;
+}
+
+.navbar-produk {
+    background-image: url('img/navbar5.jpg');
+}
+
+.logo-img {
+    height: 40px;
+    transition: transform 0.3s;
+    margin-top: -400px;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: -200px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #f0a500;
+    border-color: #f0a500;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.about-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+.scroll-to-top:hover {
+    background-color: #555;
+}
+
+.content, .history, .team {
+    padding: 40px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    display: none; /* Initially hidden */
+}
+
+.scroll-top-btn:hover {
+    background-color: #218838;
+}
+
+.card {
+    height: 100%; /* Memastikan kartu mengambil seluruh tinggi kolom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px; /* Menetapkan tinggi minimum untuk kartu */
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk spasi antar kartu */
+}
+
+.card-img-top {
+    height: 300px; /* Memperbesar tinggi gambar */
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1; /* Memungkinkan card-body untuk mengisi ruang yang tersisa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px; /* Menambahkan padding untuk card-body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Menetapkan ukuran font untuk judul */
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk spasi */
+}
+
+.card-text {
+    flex-grow: 1; /* Memungkinkan teks untuk mengisi ruang yang tersisa */
+    margin-bottom: 15px; /* Menambahkan margin bawah untuk spasi */
+}
+
+.btn {
+    align-self: flex-start; /* Menyelaraskan tombol ke kiri */
+}
+
+.card.mb-3 img {
+    width: 100%; /* Memastikan gambar mengambil seluruh lebar kartu */
+    height: auto; /* Menjaga rasio aspek gambar */
+    object-fit: cover; /* Memastikan gambar menutupi area yang ditentukan */
+    max-height: 700px; /* Menetapkan tinggi maksimum yang lebih besar untuk gambar */
+}
+
+.contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.contact h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact p {
+    margin-top: 10px;
+    color: #333;
+}
+
+.card.mb-4 {
+    margin-bottom: 30px; /* Menambahkan jarak antar card */
+}
+
+.container {
+    margin-bottom: 50px; /* Menambahkan jarak di bawah container */
+}
+
+.row.mt-4 {
+    margin-bottom: 30px; /* Menambahkan jarak di bawah row */
+}
+
+.navbar-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.navbar-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.navbar-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.navbar-content .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content .btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
